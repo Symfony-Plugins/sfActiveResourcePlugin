@@ -5,7 +5,7 @@ class sfServiceDefinitionExtender extends sfServiceDefinition {
   protected $wrappedMethods = array();
 
   public function addWrappedMethod($methodName,  array $arguments = null) {
-    $this->wrappedMethods[$methodName] = array('arguments' => $arguments, 'calls' = array());
+    $this->wrappedMethods[$methodName] = array('arguments' => $arguments, 'calls' => array());
     return $this;
   }
 
