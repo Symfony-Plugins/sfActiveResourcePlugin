@@ -425,6 +425,15 @@ class sfActiveResource {
 		return $this;
 	}
 
+    function setAuth($username, $password) {
+      $this->user = $username;
+      $this->password = $password;
+    }
+
+    public function wasValidRequest() {
+      return ($this->response_code)===false;
+    }
+
     static function callbackURL($module, $action, $controller, $fixHostAddress = true) {
       // http://checkip.dyndns.org/
       $r = $controller->genUrl(

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.0" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>sfActiveResourcePlugin</name>
+ <channel>plugins.symfony-project.org</channel>
+ <summary>The sfActiveResource plugin is an implementation of the ruby ActiveResource approach to consuming REST based services</summary>
+ <description>The sfActiveResource plugin is an implementation of the ruby ActiveResource approach to consuming REST based services based initially off the PHP lib by John Luxford http://github.com/lux and extended to support a more flexible approach for use with Symfony 1.3+.
+
+It supports all the things you&apos;d expect from a REST based consumer, flexible parameters, named methods and support for callbacks from REST servers.</description>
+ <lead>
+  <name>dasher</name>
+  <user>rubino</user>
+  <email>dasher@inspiredthinking.co.uk</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-11-23</date>
+ <time>11:42:03</time>
+ <version>
+  <release>1.0.1</release>
+  <api>1.0.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/mit-license.html">MIT</license>
+ <notes>
+More information available on the Symfony Plugin page: http://www.symfony-project.org/plugins/sfActiveResourcePlugin
+ </notes>
+ <contents>
+  <dir baseinstalldir="." name="/">
+   <file role="data" name="LICENSE" />
+   <file role="data" name="README"/>
+   <file role="data" name="README.markdown"/>
+   <file baseinstalldir="." md5sum="63d7728deb4bc3879c94934c4292d215" name="config/sfActiveResourcePluginConfiguration.class.php" role="php" />
+   <file baseinstalldir="." md5sum="251e6afb5d41d045b9b8961a99dcbb2d" name="lib/sfActiveResource.class.php" role="php" />
+   <file baseinstalldir="." md5sum="53325a743f7cf3eca92bb917830dcd11" name="lib/sfActiveResourceContainer.class.php" role="php" />
+   <file baseinstalldir="." md5sum="15fb705b7414824a3081f23b76df4afb" name="lib/sfActiveResourceRouting.class.php" role="php" />
+   <file baseinstalldir="." md5sum="4828aab1cb984d8a5d29e1c0df3cdcbd" name="lib/vendor/dependency-injection/LICENSE" role="data" />
+   <file baseinstalldir="." md5sum="d52ac50f0a435a225261a23453a0510b" name="lib/vendor/dependency-injection/README.markdown" role="data" />
+   <file baseinstalldir="." md5sum="92659817eff173615d074a8b0e6711e4" name="lib/vendor/dependency-injection/doc/00-Introduction.markdown" role="data" />
+   <file baseinstalldir="." md5sum="4e60408c1d201e0b69f56d4ee86b2402" name="lib/vendor/dependency-injection/doc/01-Dependency-Injection.markdown" role="data" />
+   <file baseinstalldir="." md5sum="3fde003fcc2bc91aca19560f58789386" name="lib/vendor/dependency-injection/doc/02-Dependency-Injection-Containers.markdown" role="data" />
+   <file baseinstalldir="." md5sum="1f04d5d4367206dd0c7e41d75d4c4918" name="lib/vendor/dependency-injection/doc/03-Service-Container.markdown" role="data" />
+   <file baseinstalldir="." md5sum="eafb1b46d2e7873b64187605be715e3a" name="lib/vendor/dependency-injection/doc/04-Builder.markdown" role="data" />
+   <file baseinstalldir="." md5sum="976e96727dffc74f7b5ca5813b0c9f3e" name="lib/vendor/dependency-injection/doc/05-Service-Description.markdown" role="data" />
+   <file baseinstalldir="." md5sum="ae97a2853cd6ef532d085e95155a06c6" name="lib/vendor/dependency-injection/doc/06-Speed.markdown" role="data" />
+   <file baseinstalldir="." md5sum="41238bf7272cbaf3787820f509be6125" name="lib/vendor/dependency-injection/doc/A-PHP-Format.markdown" role="data" />
+   <file baseinstalldir="." md5sum="eeac0fd2387fc0250032656eb69df22f" name="lib/vendor/dependency-injection/doc/B-XML-Format.markdown" role="data" />
+   <file baseinstalldir="." md5sum="4dfb7bd85cd84929e779daf8d28131e8" name="lib/vendor/dependency-injection/doc/C-YAML-Format.markdown" role="data" />
+   <file baseinstalldir="." md5sum="f1337b3d921e0427d914b999cfa3e220" name="lib/vendor/dependency-injection/doc/D-INI-Format.markdown" role="data" />
+   <file baseinstalldir="." md5sum="9dd81a95cb9b63003b6f03cdcb5ac78e" name="lib/vendor/dependency-injection/doc/E-License.markdown" role="data" />
+   <file baseinstalldir="." md5sum="a2d4b7ea3457ebfd6cbf764ef277fec2" name="lib/vendor/dependency-injection/lib/services.xsd" role="data" />
+   <file baseinstalldir="." md5sum="e64b70ea6acc7fc76d6876e88560713a" name="lib/vendor/dependency-injection/lib/sfServiceContainer.php" role="php" />
+   <file baseinstalldir="." md5sum="3091852eb786947305e59978706db046" name="lib/vendor/dependency-injection/lib/sfServiceContainerAutoloader.php" role="php" />
+   <file baseinstalldir="." md5sum="eb8cd45ac40e7c1a8cb80a323efffe61" name="lib/vendor/dependency-injection/lib/sfServiceContainerBuilder.php" role="php" />
+   <file baseinstalldir="." md5sum="76ba28efadc0677459260d7fc673e170" name="lib/vendor/dependency-injection/lib/sfServiceContainerDumper.php" role="php" />
+   <file baseinstalldir="." md5sum="7f157ef1826ab124e6622f6ec377e828" name="lib/vendor/dependency-injection/lib/sfServiceContainerDumperGraphviz.php" role="php" />
+   <file baseinstalldir="." md5sum="c98a40325cdcf864aa6ae97547f4c65c" name="lib/vendor/dependency-injection/lib/sfServiceContainerDumperInterface.php" role="php" />
+   <file baseinstalldir="." md5sum="2a19178ea6de80b880437a70f6dff4f0" name="lib/vendor/dependency-injection/lib/sfServiceContainerDumperPhp.php" role="php" />
+   <file baseinstalldir="." md5sum="a8f3c940ffdfb9f4fc4d2426bd2e7be5" name="lib/vendor/dependency-injection/lib/sfServiceContainerDumperXml.php" role="php" />
+   <file baseinstalldir="." md5sum="5fc62d366685999b193e81c643b846ef" name="lib/vendor/dependency-injection/lib/sfServiceContainerDumperYaml.php" role="php" />
+   <file baseinstalldir="." md5sum="a363dea487a428d45e2704bea93cfc61" name="lib/vendor/dependency-injection/lib/sfServiceContainerInterface.php" role="php" />
+   <file baseinstalldir="." md5sum="9bd0ef6ebeaeea881d2be1c1f5dfc932" name="lib/vendor/dependency-injection/lib/sfServiceContainerLoader.php" role="php" />
+   <file baseinstalldir="." md5sum="a736eb92d0d28d0b98a68224fa21c4dc" name="lib/vendor/dependency-injection/lib/sfServiceContainerLoaderFile.php" role="php" />
+   <file baseinstalldir="." md5sum="bef96a4308e75da066c745401e005ad5" name="lib/vendor/dependency-injection/lib/sfServiceContainerLoaderFileIni.php" role="php" />
+   <file baseinstalldir="." md5sum="59f20c7a701300f848c1631d976dd321" name="lib/vendor/dependency-injection/lib/sfServiceContainerLoaderFileXml.php" role="php" />
+   <file baseinstalldir="." md5sum="c6e55e3c471492729b96021f7748041e" name="lib/vendor/dependency-injection/lib/sfServiceContainerLoaderFileYaml.php" role="php" />
+   <file baseinstalldir="." md5sum="e66a1ea58de1cadd178b0a00efd375d7" name="lib/vendor/dependency-injection/lib/sfServiceContainerLoaderInterface.php" role="php" />
+   <file baseinstalldir="." md5sum="f7f080b98a3286611d5a21a7c2c3f7b3" name="lib/vendor/dependency-injection/lib/sfServiceDefinition.php" role="php" />
+   <file baseinstalldir="." md5sum="e5ca5577cca04bd3bca79168baa530d0" name="lib/vendor/dependency-injection/lib/sfServiceDefinitionExtender.php" role="php" />
+   <file baseinstalldir="." md5sum="5d8c87ed9238808e0a3374617065cc55" name="lib/vendor/dependency-injection/lib/sfServiceParameter.php" role="php" />
+   <file baseinstalldir="." md5sum="d8a61e0e06a696be1da4139866db0b07" name="lib/vendor/dependency-injection/lib/sfServiceReference.php" role="php" />
+   <file baseinstalldir="." md5sum="8f77cd77228e9625b5aaaf896c724bc7" name="lib/vendor/dependency-injection/lib/sfServiceSimpleXMLElement.php" role="php" />
+   <file baseinstalldir="." md5sum="c7ef00110843ccfc6d921184e24f561c" name="lib/vendor/dependency-injection/test/bin/coverage.php" role="php" />
+   <file baseinstalldir="." md5sum="b482e2a9c7ba0018050d5eb1559c267c" name="lib/vendor/dependency-injection/test/bin/prove.php" role="php" />
+   <file baseinstalldir="." md5sum="e3b5dae84bc4dba5a51ccdfbd510a409" name="lib/vendor/dependency-injection/test/unit/CrossCheckTest.php" role="php" />
+   <file baseinstalldir="." md5sum="990eccde2adac758e13c54e457e1fffc" name="lib/vendor/dependency-injection/test/unit/sfServiceContainerAutoloaderTest.php" role="php" />
+   <file baseinstalldir="." md5sum="d65f124ed5f7d8a1fd034617869539bf" name="lib/vendor/dependency-injection/test/unit/sfServiceContainerBuilderTest.php" role="php" />
+   <file baseinstalldir="." md5sum="2b4e9979b89bd41d5f9373307c21b3e2" name="lib/vendor/dependency-injection/test/unit/sfServiceContainerDumperGraphvizTest.php" role="php" />
+   <file baseinstalldir="." md5sum="58857039f60727873f7f0530967b4169" name="lib/vendor/dependency-injection/test/unit/sfServiceContainerDumperPhpTest.php" role="php" />
+   <file baseinstalldir="." md5sum="71d45153496843a8a462d8067e40c114" name="lib/vendor/dependency-injection/test/unit/sfServiceContainerDumperTest.php" role="php" />
+   <file baseinstalldir="." md5sum="0bbeca777b6c916e68273cb8e1ed220f" name="lib/vendor/dependency-injection/test/unit/sfServiceContainerDumperXmlTest.php" role="php" />
+   <file baseinstalldir="." md5sum="3ceef1c7f4e523acd2103c04f32d5620" name="lib/vendor/dependency-injection/test/unit/sfServiceContainerDumperYamlTest.php" role="php" />
+   <file baseinstalldir="." md5sum="6a87d6aaeb7ea8e4c523f03e376bff80" name="lib/vendor/dependency-injection/test/unit/sfServiceContainerLoaderFileIniTest.php" role="php" />
+   <file baseinstalldir="." md5sum="b64db65b26b8e7918d6638e880c1a978" name="lib/vendor/dependency-injection/test/unit/sfServiceContainerLoaderFileTest.php" role="php" />
+   <file baseinstalldir="." md5sum="1dee1beaa8d55d615762724f131fafdd" name="lib/vendor/dependency-injection/test/unit/sfServiceContainerLoaderFileXmlTest.php" role="php" />
+   <file baseinstalldir="." md5sum="2cf866567ca66a75f6bd7467fe0b1250" name="lib/vendor/dependency-injection/test/unit/sfServiceContainerLoaderFileYamlTest.php" role="php" />
+   <file baseinstalldir="." md5sum="feb0f33a467481ccf2364c6dba390863" name="lib/vendor/dependency-injection/test/unit/sfServiceContainerLoaderTest.php" role="php" />
+   <file baseinstalldir="." md5sum="3c87d03eb413a46144acbfdc0d6b42e9" name="lib/vendor/dependency-injection/test/unit/sfServiceContainerTest.php" role="php" />
+   <file baseinstalldir="." md5sum="4c8f248f948ccc76ad4b71e3efe46714" name="lib/vendor/dependency-injection/test/unit/sfServiceDefinitionTest.php" role="php" />
+   <file baseinstalldir="." md5sum="041038581c1d7403691ac4fba55b2e53" name="lib/vendor/dependency-injection/test/unit/sfServiceParameterTest.php" role="php" />
+   <file baseinstalldir="." md5sum="7134a3e40ab324c3147e62abb24f626e" name="lib/vendor/dependency-injection/test/unit/sfServiceReferenceTest.php" role="php" />
+   <file baseinstalldir="." md5sum="14809dcb6e926c968a30621d3a0a4c4a" name="lib/vendor/dependency-injection/test/unit/fixtures/containers/container8.php" role="php" />
+   <file baseinstalldir="." md5sum="e1f0aa2679d3f9121240b1ac0a478a05" name="lib/vendor/dependency-injection/test/unit/fixtures/containers/container9.php" role="php" />
+   <file baseinstalldir="." md5sum="19bceb6897b493e6f0f976076e767dfb" name="lib/vendor/dependency-injection/test/unit/fixtures/containers/container10.php" role="php" />
+   <file baseinstalldir="." md5sum="70e6b92a9e77985b0f1bcaea987dd2bd" name="lib/vendor/dependency-injection/test/unit/fixtures/graphviz/services1.dot" role="data" />
+   <file baseinstalldir="." md5sum="ab7b6a269df3463f6cafe7b463ee1090" name="lib/vendor/dependency-injection/test/unit/fixtures/graphviz/services9.dot" role="data" />
+   <file baseinstalldir="." md5sum="8e96c9bf4d1af7ac050d5861c9b25362" name="lib/vendor/dependency-injection/test/unit/fixtures/graphviz/services10-1.dot" role="data" />
+   <file baseinstalldir="." md5sum="f53040c1d81735d5ac1392c6fa5601e4" name="lib/vendor/dependency-injection/test/unit/fixtures/graphviz/services10.dot" role="data" />
+   <file baseinstalldir="." md5sum="233570600c78a4c727d0b471ec21196c" name="lib/vendor/dependency-injection/test/unit/fixtures/includes/classes.php" role="php" />
+   <file baseinstalldir="." md5sum="bd2609e1c12a5fec521ee9a091cda815" name="lib/vendor/dependency-injection/test/unit/fixtures/includes/foo.php" role="php" />
+   <file baseinstalldir="." md5sum="547a11b176c7c7905611acd1582252d6" name="lib/vendor/dependency-injection/test/unit/fixtures/ini/nonvalid.ini" role="data" />
+   <file baseinstalldir="." md5sum="4a8f0aad32fe89d804cb85703f0e2965" name="lib/vendor/dependency-injection/test/unit/fixtures/ini/parameters.ini" role="data" />
+   <file baseinstalldir="." md5sum="cc1e7671d8c8e219998593b0069ac474" name="lib/vendor/dependency-injection/test/unit/fixtures/ini/parameters1.ini" role="data" />
+   <file baseinstalldir="." md5sum="4ef1d76c5ed8f4a0f150394e82b5dd7e" name="lib/vendor/dependency-injection/test/unit/fixtures/php/services1-1.php" role="php" />
+   <file baseinstalldir="." md5sum="fa1f15a7d4dbd2b832f788b738d627c9" name="lib/vendor/dependency-injection/test/unit/fixtures/php/services1.php" role="php" />
+   <file baseinstalldir="." md5sum="5aff9d68489377e17923729d31d82b99" name="lib/vendor/dependency-injection/test/unit/fixtures/php/services8.php" role="php" />
+   <file baseinstalldir="." md5sum="b6f18745decf1341accd00d76f14331c" name="lib/vendor/dependency-injection/test/unit/fixtures/php/services9.php" role="php" />
+   <file baseinstalldir="." md5sum="e1fb95406c0ff63742800fdc95eb99f6" name="lib/vendor/dependency-injection/test/unit/fixtures/xml/nonvalid.xml" role="data" />
+   <file baseinstalldir="." md5sum="f23855f76186e1338312bd267e6d1293" name="lib/vendor/dependency-injection/test/unit/fixtures/xml/services1.xml" role="data" />
+   <file baseinstalldir="." md5sum="cfb884ddc4e5296ed225534b973518ed" name="lib/vendor/dependency-injection/test/unit/fixtures/xml/services2.xml" role="data" />
+   <file baseinstalldir="." md5sum="11277324d401650e1731dc7ec4edb057" name="lib/vendor/dependency-injection/test/unit/fixtures/xml/services3.xml" role="data" />
+   <file baseinstalldir="." md5sum="17ca74c904fde7aafe3dc4fe4f5a14f6" name="lib/vendor/dependency-injection/test/unit/fixtures/xml/services4.xml" role="data" />
+   <file baseinstalldir="." md5sum="1fb360247fe6b50c09864df29aeb7d77" name="lib/vendor/dependency-injection/test/unit/fixtures/xml/services5.xml" role="data" />
+   <file baseinstalldir="." md5sum="e7d26909e987772e3808b85019171ca7" name="lib/vendor/dependency-injection/test/unit/fixtures/xml/services6.xml" role="data" />
+   <file baseinstalldir="." md5sum="b99d3589ac0a7fb247362d83f529b66a" name="lib/vendor/dependency-injection/test/unit/fixtures/xml/services7.xml" role="data" />
+   <file baseinstalldir="." md5sum="4fc02c9d878e24a7f2296ac2d0930ee2" name="lib/vendor/dependency-injection/test/unit/fixtures/xml/services8.xml" role="data" />
+   <file baseinstalldir="." md5sum="a464a7be56a1e6d4392b9c4b197da2ee" name="lib/vendor/dependency-injection/test/unit/fixtures/xml/services9.xml" role="data" />
+   <file baseinstalldir="." md5sum="037bf52fe0bfa7b643b837d08dfdf92d" name="lib/vendor/dependency-injection/test/unit/fixtures/yaml/nonvalid1.yml" role="data" />
+   <file baseinstalldir="." md5sum="68934a3e9455fa72420237eb05902327" name="lib/vendor/dependency-injection/test/unit/fixtures/yaml/nonvalid2.yml" role="data" />
+   <file baseinstalldir="." md5sum="68b329da9893e34099c7d8ad5cb9c940" name="lib/vendor/dependency-injection/test/unit/fixtures/yaml/services1.yml" role="data" />
+   <file baseinstalldir="." md5sum="88fd839264d71a452759036b93273063" name="lib/vendor/dependency-injection/test/unit/fixtures/yaml/services2.yml" role="data" />
+   <file baseinstalldir="." md5sum="43a38f8154fc19093e98f91676aaa6c8" name="lib/vendor/dependency-injection/test/unit/fixtures/yaml/services3.yml" role="data" />
+   <file baseinstalldir="." md5sum="282c99d82a44128df63224c4e8a0f36c" name="lib/vendor/dependency-injection/test/unit/fixtures/yaml/services4.yml" role="data" />
+   <file baseinstalldir="." md5sum="57b46140802b52faf1ecf61b22e85d6b" name="lib/vendor/dependency-injection/test/unit/fixtures/yaml/services6.yml" role="data" />
+   <file baseinstalldir="." md5sum="9af1ccd0434d6065f0cc239cf29862d1" name="lib/vendor/dependency-injection/test/unit/fixtures/yaml/services7.yml" role="data" />
+   <file baseinstalldir="." md5sum="43e4e370f83855ef6ad5d43724ac068d" name="lib/vendor/dependency-injection/test/unit/fixtures/yaml/services8.yml" role="data" />
+   <file baseinstalldir="." md5sum="e724c6c994c30d05cf79237a840d398f" name="lib/vendor/dependency-injection/test/unit/fixtures/yaml/services9.yml" role="data" />
+   <file baseinstalldir="." md5sum="e35b014b5549d15c16ddf255301145ec" name="modules/sfActiveResource/actions/actions.class.php" role="php" />
+   <file baseinstalldir="." md5sum="e943c6461a6c483214dd5a401c5ce251" name="modules/sfActiveResource/config/security.yml" role="data" />
+   <file baseinstalldir="." md5sum="6bc31ee43f893c744deafb3c18576933" name="modules/sfActiveResource/templates/notificationSuccess.php" role="php" />
+   <file baseinstalldir="." md5sum="e8e0b53df27270381c2edc4cb664744c" name="test/builder.php" role="php" />
+   <file baseinstalldir="." md5sum="d005652d15f0ca298b78124dddd6eb1d" name="test/test.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+   <package>
+    <name>symfony</name>
+    <channel>pear.symfony-project.com</channel>
+    <min>1.3.0</min>
+    <max>1.5.0</max>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.1</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-11-23</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.html">MIT</license>
+   <notes>
+Fixed a few packaging issues - More information available on the Symfony Plugin page: http://www.symfony-project.org/plugins/sfActiveResourcePlugin
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-11-23</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.html">MIT</license>
+   <notes>
+More information available on the Symfony Plugin page: http://www.symfony-project.org/plugins/sfActiveResourcePlugin
+   </notes>
+  </release>
+ </changelog>
+</package>
