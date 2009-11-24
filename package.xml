@@ -12,10 +12,10 @@ It supports all the things you&apos;d expect from a REST based consumer, flexibl
   <email>dasher@inspiredthinking.co.uk</email>
   <active>yes</active>
  </lead>
- <date>2009-11-23</date>
- <time>11:42:03</time>
+ <date>2009-11-24</date>
+ <time>02:06:23</time>
  <version>
-  <release>1.0.1</release>
+  <release>1.0.2</release>
   <api>1.0.0</api>
  </version>
  <stability>
@@ -28,13 +28,14 @@ More information available on the Symfony Plugin page: http://www.symfony-projec
  </notes>
  <contents>
   <dir baseinstalldir="." name="/">
-   <file role="data" name="LICENSE" />
-   <file role="data" name="README"/>
-   <file role="data" name="README.markdown"/>
    <file baseinstalldir="." md5sum="63d7728deb4bc3879c94934c4292d215" name="config/sfActiveResourcePluginConfiguration.class.php" role="php" />
-   <file baseinstalldir="." md5sum="251e6afb5d41d045b9b8961a99dcbb2d" name="lib/sfActiveResource.class.php" role="php" />
+   <file baseinstalldir="." md5sum="7046223ccc6685ce276982d7219522f4" name="doc/examples/messagePub.example.php" role="php" />
+   <file baseinstalldir="." md5sum="0cae1985ce6f8df5338e7f791dbeed6b" name="doc/examples/sfActiveResourceDNS.class.php" role="php" />
+   <file baseinstalldir="." md5sum="e08ed0fe1bb77b74697974e9478f34bd" name="lib/sfActiveResource.class.php" role="php" />
    <file baseinstalldir="." md5sum="53325a743f7cf3eca92bb917830dcd11" name="lib/sfActiveResourceContainer.class.php" role="php" />
    <file baseinstalldir="." md5sum="15fb705b7414824a3081f23b76df4afb" name="lib/sfActiveResourceRouting.class.php" role="php" />
+   <file baseinstalldir="." md5sum="15caaab8bf63c132979b305a11331b11" name="lib/task/configureProjectDNSTask.class.php" role="php" />
+   <file baseinstalldir="." md5sum="9d048fd6fc6461e83228a71ea769e2d7" name="lib/task/updatePostBackDNSEntryTask.class.php" role="php" />
    <file baseinstalldir="." md5sum="4828aab1cb984d8a5d29e1c0df3cdcbd" name="lib/vendor/dependency-injection/LICENSE" role="data" />
    <file baseinstalldir="." md5sum="d52ac50f0a435a225261a23453a0510b" name="lib/vendor/dependency-injection/README.markdown" role="data" />
    <file baseinstalldir="." md5sum="92659817eff173615d074a8b0e6711e4" name="lib/vendor/dependency-injection/doc/00-Introduction.markdown" role="data" />
@@ -126,11 +127,14 @@ More information available on the Symfony Plugin page: http://www.symfony-projec
    <file baseinstalldir="." md5sum="9af1ccd0434d6065f0cc239cf29862d1" name="lib/vendor/dependency-injection/test/unit/fixtures/yaml/services7.yml" role="data" />
    <file baseinstalldir="." md5sum="43e4e370f83855ef6ad5d43724ac068d" name="lib/vendor/dependency-injection/test/unit/fixtures/yaml/services8.yml" role="data" />
    <file baseinstalldir="." md5sum="e724c6c994c30d05cf79237a840d398f" name="lib/vendor/dependency-injection/test/unit/fixtures/yaml/services9.yml" role="data" />
-   <file baseinstalldir="." md5sum="e35b014b5549d15c16ddf255301145ec" name="modules/sfActiveResource/actions/actions.class.php" role="php" />
+   <file baseinstalldir="." md5sum="311422db76e302e501e2e6885a143c37" name="modules/sfActiveResource/actions/actions.class.php" role="php" />
    <file baseinstalldir="." md5sum="e943c6461a6c483214dd5a401c5ce251" name="modules/sfActiveResource/config/security.yml" role="data" />
    <file baseinstalldir="." md5sum="6bc31ee43f893c744deafb3c18576933" name="modules/sfActiveResource/templates/notificationSuccess.php" role="php" />
    <file baseinstalldir="." md5sum="e8e0b53df27270381c2edc4cb664744c" name="test/builder.php" role="php" />
    <file baseinstalldir="." md5sum="d005652d15f0ca298b78124dddd6eb1d" name="test/test.php" role="php" />
+   <file baseinstalldir="." md5sum="e3129364106e59e5c6b572234b914ec7" name="LICENSE" role="data" />
+   <file baseinstalldir="." md5sum="4835480f9def39d2241ddc9beede68c0" name="README" role="data" />
+   <file baseinstalldir="." md5sum="4835480f9def39d2241ddc9beede68c0" name="README.markdown" role="data" />
   </dir>
  </contents>
  <dependencies>
@@ -148,24 +152,17 @@ More information available on the Symfony Plugin page: http://www.symfony-projec
     <max>1.5.0</max>
    </package>
   </required>
+  <optional>
+   <package>
+    <name>sfWebBrowserPlugin</name>
+    <channel>plugins.symfony-project.org</channel>
+    <min>1.1.2</min>
+    <max>1.9</max>
+   </package>
+  </optional>
  </dependencies>
  <phprelease />
  <changelog>
-  <release>
-   <version>
-    <release>1.0.1</release>
-    <api>1.0.0</api>
-   </version>
-   <stability>
-    <release>stable</release>
-    <api>stable</api>
-   </stability>
-   <date>2009-11-23</date>
-   <license uri="http://www.opensource.org/licenses/mit-license.html">MIT</license>
-   <notes>
-Fixed a few packaging issues - More information available on the Symfony Plugin page: http://www.symfony-project.org/plugins/sfActiveResourcePlugin
-   </notes>
-  </release>
   <release>
    <version>
     <release>1.0.0</release>
@@ -176,6 +173,36 @@ Fixed a few packaging issues - More information available on the Symfony Plugin 
     <api>stable</api>
    </stability>
    <date>2009-11-23</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.html">MIT</license>
+   <notes>
+More information available on the Symfony Plugin page: http://www.symfony-project.org/plugins/sfActiveResourcePlugin
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.1</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-11-24</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.html">MIT</license>
+   <notes>
+More information available on the Symfony Plugin page: http://www.symfony-project.org/plugins/sfActiveResourcePlugin
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.2</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-11-24</date>
    <license uri="http://www.opensource.org/licenses/mit-license.html">MIT</license>
    <notes>
 More information available on the Symfony Plugin page: http://www.symfony-project.org/plugins/sfActiveResourcePlugin

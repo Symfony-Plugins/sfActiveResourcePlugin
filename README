@@ -68,3 +68,5 @@ Using the Symfony Components DI container to better encapsulate and describe the
 
 The DI container however needs a little tweaking to support this type of approach.
 
+### Updates ###
+Updated with the DNS examples and some tasks to help setup and manage hosts via REST.  There's now an optional dependancy on the sfBrowserPlugin which allows us to use a web service for obtaining our public IP address.
