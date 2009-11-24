@@ -13,9 +13,9 @@ It supports all the things you&apos;d expect from a REST based consumer, flexibl
   <active>yes</active>
  </lead>
  <date>2009-11-24</date>
- <time>02:06:23</time>
+ <time>02:13:51</time>
  <version>
-  <release>1.0.2</release>
+  <release>1.0.3</release>
   <api>1.0.0</api>
  </version>
  <stability>
@@ -132,9 +132,11 @@ More information available on the Symfony Plugin page: http://www.symfony-projec
    <file baseinstalldir="." md5sum="6bc31ee43f893c744deafb3c18576933" name="modules/sfActiveResource/templates/notificationSuccess.php" role="php" />
    <file baseinstalldir="." md5sum="e8e0b53df27270381c2edc4cb664744c" name="test/builder.php" role="php" />
    <file baseinstalldir="." md5sum="d005652d15f0ca298b78124dddd6eb1d" name="test/test.php" role="php" />
-   <file baseinstalldir="." md5sum="e3129364106e59e5c6b572234b914ec7" name="LICENSE" role="data" />
-   <file baseinstalldir="." md5sum="4835480f9def39d2241ddc9beede68c0" name="README" role="data" />
-   <file baseinstalldir="." md5sum="4835480f9def39d2241ddc9beede68c0" name="README.markdown" role="data" />
+   <file baseinstalldir="." md5sum="b3c413478adf90ac14464fe31a4bdd30" name="LICENSE" role="data" />
+   <file baseinstalldir="." md5sum="2cbb57264d2eea56b1cab799b02b007e" name="README" role="data" />
+   <file baseinstalldir="." md5sum="2cbb57264d2eea56b1cab799b02b007e" name="README.markdown" role="data" />
+   <file baseinstalldir="." md5sum="399b980734098ae9fff6dbab466d006e" name="sfActiveResourcePlugin-1.0.1.tgz" role="data" />
+   <file baseinstalldir="." md5sum="88f53c7e7f2f2679cfc464240698b388" name="sfActiveResourcePlugin-1.0.2.tgz" role="data" />
   </dir>
  </contents>
  <dependencies>
@@ -196,6 +198,21 @@ More information available on the Symfony Plugin page: http://www.symfony-projec
   <release>
    <version>
     <release>1.0.2</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-11-24</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.html">MIT</license>
+   <notes>
+More information available on the Symfony Plugin page: http://www.symfony-project.org/plugins/sfActiveResourcePlugin
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.3</release>
     <api>1.0.0</api>
    </version>
    <stability>
